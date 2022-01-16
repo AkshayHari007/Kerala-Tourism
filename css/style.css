@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-#district-drop{
-    
+#district-drop {
+
     margin-left: -12px;
 }
 
@@ -23,14 +23,14 @@ body{
     left: 0;
     top: 0;
     min-height: min-content;
-    
-  }
-  
+
+}
+
 .SImage img {
-    
+
     max-height: 550px;
-   
-  }
+
+}
 
 
 /* .Quick-Locations a{
@@ -47,18 +47,18 @@ body{
 
 } */
 
-.About-Kerala{
+.About-Kerala {
     border: 5px sloid black;
     margin: 10px;
     padding: 25px;
-    background-color: rgba(255, 255, 255,.5);
+    background-color: rgba(255, 255, 255, .5);
 }
 
-#HeadingMain{
+#HeadingMain {
     text-align: center;
 }
 
-#Content-Desc{
+#Content-Desc {
     text-align: justify;
     font-size: large;
 }
@@ -68,55 +68,57 @@ body{
 /* /Index content about Kerala */
 
 
-.login{
+.login {
     margin: 2.5em;
     padding: 50px;
-    border: 2px solid rgba(0, 0, 0,0.4);
-    background-color: rgba(255, 255, 255,0.6);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     margin-bottom: 85px;
 }
 
-.signup{
+.signup {
     margin: 2.5em;
     padding: 50px;
-    border: 2px solid rgba(0, 0, 0,0.4);
-    background-color: rgba(255, 255, 255,0.6);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 
-.formhead h3{ /* Forgotten the password */
+.formhead h3 {
+    /* Forgotten the password */
 
     text-align: center;
     margin-bottom: 25px;
 }
 
-#FTP{
+#FTP {
     float: right;
     color: red;
     text-align-last: right;
 }
-#FTP:hover{
+
+#FTP:hover {
     text-decoration: none;
     transition: .5s ease-in-out;
 }
 
-#Log-In-Button{
+#Log-In-Button {
     width: 100%;
 }
 
-.acc{
+.acc {
     font-size: large;
     text-align: center;
 }
 
-.acc a{
+.acc a {
     text-decoration: none;
 }
 
 /* Explore Kerala */
 
 .DistrictLogo {
-    
+
     position: relative;
     text-align: center;
     color: white;
@@ -125,22 +127,22 @@ body{
     padding: auto;
 }
 
-.DistrictLogo a{
+.DistrictLogo a {
     text-decoration: none;
     color: white;
 
 }
 
-.DistrictLogo a:hover{
+.DistrictLogo a:hover {
     transition: .5s ease-in-out;
     color: cyan;
 }
 
-.DistrictLogo img{
+.DistrictLogo img {
     border-radius: 12%;
 }
 
-.DistrictLogo img:hover{
+.DistrictLogo img:hover {
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
@@ -154,27 +156,27 @@ body{
 }
 
 
-.district{
+.district {
     text-align: center;
     margin: 10px;
     /* border: 2px solid black; */
-    background-color: rgba(255, 255, 255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     padding-left: 75px;
     margin-bottom: 50px;
-       
+
 }
 
 .district::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 /* End of Explore Kerala */
 
 /* Each District Style */
 
-.Places-To-Visit a{
+.Places-To-Visit a {
     text-decoration: none;
     font-size: larger;
     font-weight: bold;
@@ -182,7 +184,7 @@ body{
 
 }
 
-.Places-To-Visit a:hover{
+.Places-To-Visit a:hover {
     color: blue;
     transition: .2s ease-in-out;
 
@@ -190,18 +192,18 @@ body{
 
 
 
-.contents{
+.contents {
     border: 5px sloid black;
     margin: 15px;
     padding: 25px;
-    background-color: rgba(255, 255, 255,.5);
+    background-color: rgba(255, 255, 255, .5);
 }
 
-#District-Name{
+#District-Name {
     text-align: center;
 }
 
-#Deistrict-Desc{
+#Deistrict-Desc {
     text-align: justify;
     font-size: large;
 }
@@ -221,7 +223,4 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
- }
-
- 
-
+}
