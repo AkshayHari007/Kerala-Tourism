@@ -95,7 +95,7 @@
 
     <form>
       <div class="form-floating mb-3 mt-3">
-        <input type="text" class="form-control" placeholder="Enter Your First Name" name="First Name">
+        <input type="text" class="form-control" placeholder="Enter Your First Name" name="First Name" required>
         <label for="FName">First Name</label>
       </div>
 
@@ -105,23 +105,31 @@
       </div>
 
       <div class="form-floating mb-3 mt-3">
-        <input type="text" class="form-control" placeholder="Enter Your Email Id" name="Email Id">
+        <input type="text" class="form-control" id="ebox" onkeypress="emailValidate()" placeholder="Enter Your Email Id"
+          name="Email Id" required>
         <label for="LName">Email Id</label>
+        <p id="emailMessage"></p>
       </div>
 
       <div class="form-floating mb-3 mt-3">
-        <input type="text" class="form-control" placeholder="Enter Your Phone Number" name="Phone Number">
+        <input type="text" class="form-control" id="phbox" onkeypress="phValidate()"
+          placeholder="Enter Your Phone Number" name="Phone Number" required>
         <label for="LName">Phone Number</label>
+        <p id="phMessage"></p>
       </div>
 
       <div class="form-floating mb-3 mt-3">
-        <input type="password" class="form-control" placeholder="Enter a Password" name="Password">
+        <input type="password" class="form-control" id="pwdbox" onkeypress="pwdValidate()"
+          placeholder="Enter a Password" name="Password" required>
         <label for="LName">Password</label>
+        <p id="pwdMessage"></p>
       </div>
 
       <div class="form-floating mb-3 mt-3">
-        <input type="password" class="form-control" placeholder="Confirm the Password" name="Confirm the Password">
+        <input type="password" class="form-control" id="pwdcbox" onkeypress="pwdcValidate()"
+          placeholder="Confirm the Password" name="Confirm the Password" required>
         <label for="LName">Confirm the Password</label>
+        <p id="pwdCMessage"></p>
       </div>
 
       <!-- <div class="row mb-3">
