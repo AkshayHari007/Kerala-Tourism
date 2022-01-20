@@ -9,8 +9,9 @@ var pwdcm = document.getElementById("pwdcMessage");
 var ev, phv, pwdv, pwdcv;
 
 function emailValidate() {
-    var eregexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3}?)$/;
-    if (eregexp.test(ebox.value)) {
+    // var eregexp = /^([\w]+)@([\w]+).([\w]{2,3})(.[\w]{2,3})?$/;
+    var eregexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+    if (eregexp.test(e.value)) {
         em.innerHTML = "Valid";
         em.style.color = "green";
         ev = true;
@@ -24,8 +25,9 @@ function emailValidate() {
 }
 
 function phValidate() {
-    var phregexp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-    if (phregexp.test(phbox.value)) {
+    var phregexp = /^([0-9]{3})([. -]?[0-9]{3})([. -]?[0-9]{4})$/;
+    // var phregexp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    if (phregexp.test(ph.value)) {
         phm.innerHTML = "Valid";
         phm.style.color = "green";
         phv = true;

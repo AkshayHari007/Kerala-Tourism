@@ -19,7 +19,7 @@
 
 </head>
 
-<body background="Images/Background3.jpg">
+<body background="Images/background5.jpg">
 
 
   <!-- Navbar -->
@@ -93,7 +93,7 @@
     <h3>Create an Account in Kerala Tourism Website</h3>
     <br>
 
-    <form>
+    <form action="login.html" onsubmit="return validat();">
       <div class="form-floating mb-3 mt-3">
         <input type="text" class="form-control" placeholder="Enter Your First Name" name="First Name" required>
         <label for="FName">First Name</label>
@@ -105,15 +105,15 @@
       </div>
 
       <div class="form-floating mb-3 mt-3">
-        <input type="text" class="form-control" id="ebox" onkeypress="emailValidate()" placeholder="Enter Your Email Id"
+        <input type="text" class="form-control" id="ebox" onkeyup="emailValidate()" placeholder="Enter Your Email Id"
           name="Email Id" required>
         <label for="LName">Email Id</label>
         <p id="emailMessage"></p>
       </div>
 
       <div class="form-floating mb-3 mt-3">
-        <input type="text" class="form-control" id="phbox" onkeypress="phValidate()"
-          placeholder="Enter Your Phone Number" name="Phone Number" required>
+        <input type="text" class="form-control" id="phbox" onkeyup="phValidate()" placeholder="Enter Your Phone Number"
+          name="Phone Number" maxlength="12" required>
         <label for="LName">Phone Number</label>
         <p id="phMessage"></p>
       </div>
