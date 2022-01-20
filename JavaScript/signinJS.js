@@ -14,6 +14,7 @@ function emailValidate() {
     if (eregexp.test(e.value)) {
         em.innerHTML = "Valid";
         em.style.color = "green";
+        e.style.border = "";
         ev = true;
     } else {
         em.innerHTML = "Email format should be in example@domain.xxx or example@domain.xxx.xxx";
@@ -30,6 +31,7 @@ function phValidate() {
     if (phregexp.test(ph.value)) {
         phm.innerHTML = "Valid";
         phm.style.color = "green";
+        ph.style.border = "";
         phv = true;
     } else {
         phm.innerHTML = "Phone number format should be in XXX-XXX-XXXX, XXX.XXX.XXXX, XXX XXX XXXX or XXXXXXXXXX";
@@ -49,6 +51,7 @@ function pwdValidate() {
     if ((leg >= 8) && (L.test(pwd.value)) && (U.test(pwd.value)) && (N.test(pwd.value))) {
         pwdm.innerHTML = "Valid";
         pwdm.style.color = "green";
+        pwd.style.border = "";
         pwdv = true;
         if ((leg >= 8) && (leg <= 12)) {
             pwd.style.border = "3px solid orange";
@@ -81,11 +84,12 @@ function pwdcValidate() {
 }
 
 function validat() {
+    pwdcValidate();
     if (ev && phv && pwdv && pwdcv) {
         alert("Your account has been successfully created. Press OK to enter the LogIn page.");
         return true;
     } else {
-        alert("Error!");
+        alert("Please check if the data entered is following the specified format.");
         return false;
     }
 }
